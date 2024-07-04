@@ -34,5 +34,56 @@ Git is a version control system that allows multiple people to work on a project
 
 **Install Git:**
 Download and install Git
+**Configure Git:**
+```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+**Create a New Repository:**
+```
+mkdir my-project
+cd my-project
+git init
+```
+**Clone an Existing Repository:**
+```
+git clone https://github.com/username/repository.git
+```
+**Check the Status of Your Repo:**
+```
+git status
+```
+**Add Files to Staging Area:**
+```
+git add filename
+# Or to add all changes
+git add .
+```
+**Commit Your Changes:**
+```
+git commit -m "Commit message describing your changes"
+```
+**Push Changes to a Remote Repository:**
+```
+git push origin branch-name
+```
+**Pull Changes from a Remote Repository:**
+```
+git pull origin main
+```
+**Create a New Branch:**
+```
+git branch new-branch-name
+git checkout new-branch-name
+# Or create and switch to the new branch in one command
+git checkout -b new-branch-name
+```
+**Merge a Branch into Another:**
+```
+# Switch to the branch you want to merge into
+git checkout main
+# Merge the other branch
+git merge new-branch-name
+```
 
 
